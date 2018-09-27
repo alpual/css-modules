@@ -1,0 +1,27 @@
+$image-width: 25%;
+$background-color: #f7f7f7;
+$max-width: 20rem;
+
+.media-block {
+  display: grid;
+  grid-template-columns: $image-width auto;
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  background: $background-color;
+  padding: 1rem;
+  max-width: $max-width;
+}
+.media-block__image {
+  align-self: start;
+  width: 100%;
+}
+.media-block__text-area {
+  vertical-align: top;
+}
+.media-block__title {
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+.media-block__subtitle {
+  font-weight: 400;
+}
